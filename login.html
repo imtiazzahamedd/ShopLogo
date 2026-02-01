@@ -67,22 +67,24 @@
     </header>
     <main class="my-5 container mx-auto">
         <!-- login -->
-        <form>
+        <form onsubmit="submitFunction(event)">
             <h1 class="text-center pb-4">Login</h1>
             <section class="form d-flex flex-column gap-3">
                 <input type="text" class="form-control" placeholder="Username" aria-label="Username" required>
-                <input type="text" class="form-control" placeholder="Password" aria-label="Password" required>
+                <input type="password" class="form-control" placeholder="Password" aria-label="Password" required>
                 <input type="submit" value="Login" class="btn btn-success">
             </section>
         </form>
     </main>
     <footer class=" p-lg-3 p-md-2 p-1 text-center fixed-bottom">
-            <p class="pt-md-4 pt-2">© 2025 ShopLogo. All rights reserved.</p>
-            <p class="time">12/20/2025, 02:12 PM</p>
-        </footer>
+        <p class="pt-md-4 pt-2">© 2025 ShopLogo. All rights reserved.</p>
+        <p class="time">12/20/2025, 02:12 PM</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
