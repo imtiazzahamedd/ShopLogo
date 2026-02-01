@@ -46,6 +46,10 @@ footer{
     background-color: #212529;
     color: white;
 }
+.title{
+    font-size: 19px;
+    font-weight: 600;
+}
 @media screen  and (max-width:767px) {
     .topbar ul{
         font-size:12px;
