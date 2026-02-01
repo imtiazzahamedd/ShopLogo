@@ -10,6 +10,15 @@ function submitFunction(event) {
   });
 }
 
-setInterval(() => {
-  document.getElementById("datetime").innerHTML = new Date().toLocaleString();
-}, 1000);
+function updateDateTime() {
+  const datetimeElement = document.getElementById("datetime");
+  if (datetimeElement) {
+    datetimeElement.innerHTML = new Date().toLocaleString();
+  }
+}
+
+// Update immediately on page load
+updateDateTime();
+
+// Then update every second
+setInterval(updateDateTime, 1000);
